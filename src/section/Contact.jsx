@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
+    <section id="contact" className="flex-center section-padding bg-white">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
@@ -48,14 +48,14 @@ const Contact = () => {
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-10 bg-white shadow-lg">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
               >
                 <div>
-                  <label htmlFor="name">Your name</label>
+                  <label htmlFor="name" className="text-gray-900">Your name</label>
                   <input
                     type="text"
                     id="name"
@@ -64,11 +64,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="What’s your good name?"
                     required
+                    className="mt-2 p-3 w-full border border-gray-300 rounded-md bg-gray-50"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email">Your Email</label>
+                  <label htmlFor="email" className="text-gray-900">Your Email</label>
                   <input
                     type="email"
                     id="email"
@@ -77,11 +78,12 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="What’s your email address?"
                     required
+                    className="mt-2 p-3 w-full border border-gray-300 rounded-md bg-gray-50"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message" className="text-gray-900">Your Message</label>
                   <textarea
                     id="message"
                     name="message"
@@ -90,15 +92,14 @@ const Contact = () => {
                     placeholder="How can I help you?"
                     rows="5"
                     required
+                    className="mt-2 p-3 w-full border border-gray-300 rounded-md bg-gray-50"
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" className="mt-4">
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
+                    <p className="text-gray-900">{loading ? "Sending..." : "Send Message"}</p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>

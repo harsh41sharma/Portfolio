@@ -9,13 +9,12 @@ const About = () => {
       >
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white">About</h2>
+          <h2 className="text-4xl font-bold text-black">About</h2>
           <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         </div>
-        <div className="border border-white bg-gray-900 backdrop-blur-md  p-8 rounded-xl">
-            <p className="mt-4 text-gray-400 font-bold"> I am a full-stack developer with a passion for creating dynamic and responsive web applications. I have a strong foundation in computer science and a keen interest in web development. I have experience in building dynamic and responsive web applications using modern technologies.
-            Skilled in both front-end and back-end development, I specialize in the MERN stack and other
-            modern technologies to create seamless user experiences and efficient solutions. I am a passionate software engineer with a strong foundation in computer science and a keen interest in web development. I have experience in building dynamic and responsive web applications using modern technologies.</p>
+        <div className="border border-gray bg-white-900 backdrop-blur-md  p-8 rounded-xl">
+            <p className="mt-4 text-black-400 font-bold"> Computer science undergraduate with proven expertise in full stack web development using the MERN stack. Successfully developed and deployed production-grade applications in web domains. Having experience building clean, maintainable codebases, designing scalable backends, and designing responsive user-centric interfaces.
+            </p>
         </div>
 
         

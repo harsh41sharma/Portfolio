@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="flex flex-col gap-7">
           <div className="hero-text">
             <h2>Hi, I am </h2>
-            <h1>Mohit Keshari</h1>
+            <h1>Harsh Sharma</h1>
             <h1>
               I  am a 
               <span className="slide">

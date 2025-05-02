@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import { navLinks } from "../constant";
 
 const NavBar = () => {
@@ -23,9 +22,9 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
+    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`} style={{ backgroundColor: "#FFFFFF" }}>
       <div className="inner">
-        <a href="#hero" className="logo">
+        <a href="#hero" className="logo" style={{ color: "#000000" }}>
           Mohit Keshari
         </a>
 
@@ -33,18 +32,18 @@ const NavBar = () => {
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
-                <a href={link}>
+                <a href={link} style={{ color: "#000000" }}>
                   <span>{name}</span>
-                  <span className="underline" />
+                  <span className="underline" style={{ backgroundColor: "#000000" }} />
                 </a>
               </li>
             ))}
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
+        <a href="#contact" className="contact-btn group" style={{ border: "1px solid #000000" }}>
           <div className="inner">
-            <span>Contact me</span>
+            <span style={{ color: "#000000" }}>Contact me</span>
           </div>
         </a>
       </div>

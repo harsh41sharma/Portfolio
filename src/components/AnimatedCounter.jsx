@@ -1,10 +1,7 @@
-
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import { ScrollTrigger } from "gsap/all";
-
-import { counterItems } from "../constant";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -39,18 +36,26 @@ const AnimatedCounter = () => {
   }, []);
 
   return (
-    <div id="counter" ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
+    <div
+      id="counter"
+      ref={counterRef}
+      className="padding-x-lg xl:mt-0 mt-32"
+      style={{ backgroundColor: "#FFFFFF" }} // White background for the section
+    >
       <div className="mx-auto grid-4-cols">
         {counterItems.map((item, index) => (
           <div
             key={index}
             ref={(el) => el && (countersRef.current[index] = el)}
-            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
+            className="bg-white rounded-lg p-10 flex flex-col justify-center shadow-lg" // White background for counter items
+            style={{
+              border: "1px solid #ddd", // Light border for better contrast
+            }}
           >
-            <div className="counter-number text-white-50 text-5xl font-bold mb-2">
+            <div className="counter-number text-black text-5xl font-bold mb-2">
               0 {item.suffix}
             </div>
-            <div className="text-white-50 text-lg">{item.label}</div>
+            <div className="text-black text-lg">{item.label}</div>
           </div>
         ))}
       </div>

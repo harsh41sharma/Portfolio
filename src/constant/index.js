@@ -115,12 +115,12 @@ const socialImgs = [
   {
     name: "github",
     imgPath: "/images/github.png",
-    link:"https://github.com/techie-mohit" // Added link for GitHub
+    link:"https://github.com/harsh41sharma/" // Added link for GitHub
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    link: "https://www.linkedin.com/in/mohitkeshari04/" // Added link for LinkedIn
+    link: "https://www.linkedin.com/in/harsh41sharma/" // Added link for LinkedIn
   },
 ];
 
@@ -260,10 +260,10 @@ export const education = [
   {
     id: 0,
     img: "education/college.jpeg",
-    school: "Ajay Kumar Garg Engineering College Ghaziabad",
+    school: "Raj Kumar Goel Institute of Technology, Ghaziabad",
     date: "Nov 2022 - Present",
-    grade: "79.1%",
-    desc: "I am pursuing my Bachelor's degree in Computer Science and Engineering  (BTech) from Ajay Kumar Garg Engineering College Ghaziabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems.",
+    CGPA: "8.30",
+    desc: "I am pursuing my Bachelor's degree in Computer Science and Engineering  (BTech) from Raj Kumar Goel Institute of Technology, Ghaziabad. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems.",
     degree: "Bachelor of Technology - BTech (Computer Science and Engineering)",
   },
   {
@@ -271,8 +271,8 @@ export const education = [
     img: "education/school.jpeg",
     school: "Varanasi Public School, Varanasi",
     date: "Apr 2020 - March 2021",
-    grade: "93.4%",
-    desc: "I completed my class 12 education from Varanasi Public School, Varanasi, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
+    grade: "89.60%",
+    desc: "I completed my class 12th education from Varanasi Public School, Varanasi, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
     degree: "CBSE(XII) - PCM with Computer Science",
   },
   {
@@ -280,7 +280,7 @@ export const education = [
     img: "education/school.jpeg",
     school: "Varanasi Public School, Varanasi",
     date: "Apr 2018 - March 2019",
-    grade: "92.8%",
+    grade: "95.20%",
     desc: "I completed my class 10 education from Varanasi Public School, Varanasi, under the CBSE board, where I studied Science with Computer.",
     degree: "CBSE(X), Science with Computer Application",
   },
@@ -290,56 +290,47 @@ export const education = [
 
 export const projects = [
   {
-    id: 0,
-    title: "Linkup - Social Networking App",
-    description:
-      "LinkUp is a sleek social networking platform focused on meaningful one-to-one connections. It enables users to create profiles, discover others, and engage in private real-time conversations. Designed with a clean and responsive interface, LinkUp prioritizes simplicity and performance, making it easy to stay connected without the noise of group chats or feeds.",
-    image: "project/linkup.png",
-    tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
-    github: "https://github.com/techie-mohit/Linkup",
-    webapp: "https://linkup-u40u.onrender.com/",
-  },
-  {
-    id: 1,
-    title: "Learnify",
-    description:
-      "Learnify is a modern e-learning platform designed to make high-quality education accessible to everyone. Inspired by Udemy, it allows instructors to create and manage courses, while students can browse, enroll, and learn at their own pace. The platform features video-based lessons, progress tracking, and secure payments, delivering a smooth and engaging online learning experience.",
-    image: "project/lms.png",
-    tags: ["React.js", "Node.js", "Express", "MongoDB", "Stripe", "Cloudinary", "Tailwind CSS"],
-    github: "https://github.com/techie-mohit/Learnify",
-    webapp: "https://learnify-uy89.onrender.com",
-  },
-  {
     id: 2,
-    title: "Cabify",
+    title: "Cabify - Online Cab Booking Plateform",
     description:
-      "Cabify is a ride-hailing application that allows users to book cabs with ease and convenience. Users can sign up, choose their pickup and drop-off locations, and get matched with nearby drivers. The app uses Google Maps via Google Cloud Platform (GCP) for accurate location services, route display, and real-time tracking. It’s designed to provide a smooth and intuitive experience for both riders and drivers.",
+      "Cabify is a full-stack cab booking web application built using the MERN stack. It features real-time cab availability, user authentication, booking history, and interactive UI. Designed to streamline ride-hailing with a smooth and responsive user experience.",
     image: "project/cabify.jpg",
     tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS", "Google Maps API (via GCP)"],
-    github: "https://github.com/techie-mohit/Cabify",
+    github: "https://github.com/harsh41sharma/Cabify",
     webapp: "",
   },
   {
-    id: 3,
-    title: "ByteLog",
+    id: 1,
+    title: "Learnify - Learning Management System Plateform",
     description:
-      "ByteLog is a sleek and modern blogging platform built specifically for developers to write and share technical content. It supports clean code formatting, user-friendly writing tools, and easy post management. With a focus on performance, security, and simplicity, ByteLog offers a smooth experience for both readers and writers.",
+      "Built Learnify, an interactive e-learning platform where users can enroll in courses, track progress, and access study resources seamlessly. Implemented a full-stack architecture with secure authentication, real-time data updates, and a smooth user interface. Focused on delivering a dynamic and user-friendly learning experience.",
+    image: "project/lms.png",
+    tags: ["React.js", "Node.js", "Express", "MongoDB", "Stripe", "Cloudinary", "Tailwind CSS"],
+    github: "https://github.com/harsh41sharma/Learnify",
+    webapp: "https://learnify-uy89.onrender.com",
+  },
+  {
+    id: 0,
+    title: "Linkup - Real Time Chat Plateform",
+    description:
+      "Linkup is a social media web application that enables users to create posts, follow others, like, comment, and interact in real time. Built with the MERN stack, it features authentication, responsive design, and a clean, user-friendly interface.",
+    image: "project/linkup.png",
+    tags: ["React.js", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
+    github: "https://github.com/harsh41sharma/Linkup",
+    webapp: "https://linkup-u40u.onrender.com/",
+  },
+  
+  {
+    id: 3,
+    title: "Shoppy - E - Commerce Web Plateform",
+    description:
+      "Shoppy is a modern e-commerce dashboard application built using React and Syncfusion components. It features dynamic charts, theme customization, responsive UI, and seamless navigation for managing products, orders, and customers efficiently.",
     image: "project/bytelog.png",
     tags: ["Next.js", "React.js", "TypeScript", "Neon (PostgreSQL)", "Prisma ORM", "Clerk Authentication", "Tailwind CSS"],
     github: "https://github.com/techie-mohit/ByteLog",
     webapp: "", // Updated webapp link
   },
-  {
-    id: 4,
-    title: "Employee Management System",
-    description:
-      "This is a basic employee management system that allows users to add, edit, view, and delete employee records. Built using React.js, the app uses the browser's localStorage to save data, making it lightweight and easy to use without any backend. It’s a great tool for practicing CRUD operations and state management in React.",
-    image: "project/employee.png",
-    tags: ["React.js", "JavaScript", "localStorage", " CSS"],
-    github: "https://github.com/techie-mohit/Employee-Management-System",
-    webapp: "",
-  },
-];  
+  ];  
 
 
 
