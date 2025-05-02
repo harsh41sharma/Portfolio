@@ -25,7 +25,7 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`} style={{ backgroundColor: "#FFFFFF" }}>
       <div className="inner">
         <a href="#hero" className="logo" style={{ color: "#000000" }}>
-          Mohit Keshari
+          Harsh Sharma
         </a>
 
         <nav className="desktop">
